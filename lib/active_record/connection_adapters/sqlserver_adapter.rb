@@ -146,7 +146,7 @@ module ActiveRecord
         end
 
         def config_timeout(config)
-          config[:timeout].present? ? config[:timeout].to_i / 1000 : nil
+          config[:timeout].present? ? 60000 / 1000 : 60000 / 1000
         end
 
         def config_encoding(config)
